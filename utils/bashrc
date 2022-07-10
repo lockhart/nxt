@@ -1,0 +1,13 @@
+# bashrc
+# Definitions for django development
+# Thomas Lockhart
+
+umask 002
+
+# postgres configuration for our local test installation
+# For now the postgres server will be run from the command line
+export PGDATA=/opt/local/var/db/postgresql14/defaultdb
+export PGPORT=5432
+export PGUSER=nxt
+
+conda activate nxt
