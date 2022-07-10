@@ -1,0 +1,5 @@
+# basic conda configuration for nxt project
+python<3.8
+django<4.0
+psycopg2
+# python-social-auth
