@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block title %}<title>NXT</title>{% endblock %}
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+
+{% block stylesheets %}
+<link rel="icon" type="image/png" sizes="64x64" href="{%  static 'planets-64x64.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{%  static 'planets-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{%  static 'planets-16x16.png' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" media="screen">
+{% endblock %}
+{% block heading %}{%endblock}
+</head>
+<body>
+{% block content %}{% endblock %}
+{% block javascript %}{% endblock %}
+</body>
+</html>
