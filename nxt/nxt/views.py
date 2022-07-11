@@ -10,6 +10,11 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class ProfileView(TemplateView):
-    template_name='membership/detail.html'
+class HomeView(TemplateView):
+    template_name='home.html'
+    pass
+
+
+class AboutView(TemplateView):
+    template_name='about.html'
     pass

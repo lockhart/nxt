@@ -1,4 +1,4 @@
-{% extends "base_sidebar.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block heading %}
@@ -6,15 +6,11 @@
 {% endblock %}
 
 {% block content %}
+<ul>
+<li><a href="{% url "social:begin" "google-oauth2" %}">Google+</a></li>
+</ul>
 {% endblock %}
 
 {% block javascript %}
 {{ block.super }}
 {% endblock %}
-
-<html>
-  <head>
-  </head>
-  <body>
-  </body>
-</html>

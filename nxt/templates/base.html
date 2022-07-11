@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% block title %}<title>NXT</title>{% endblock %}
+{% block title %}<title>NXT</title>{% endblock title %}
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
@@ -12,11 +12,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{%  static 'planets-32x32.png' %}">
 <link rel="icon" type="image/png" sizes="16x16" href="{%  static 'planets-16x16.png' %}">
 <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css" media="screen">
-{% endblock %}
-{% block heading %}{%endblock}
+{% endblock stylesheets %}
+{% block heading %}{% endblock heading %}
 </head>
 <body>
-{% block content %}{% endblock %}
+{% block content %}{% endblock content %}
 {% block footer %}
 <div class="container">
 <p></p>
@@ -25,7 +25,7 @@
 </div>
 <div class="row justify-content-center align-items-center">
   <a class="navigation" href="{% url 'nxt:home' %}">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a class="navigation" href="{% url 'membership:login' %}">Login</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a class="navigation" href="{% url 'membership:profile' %}">Login</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a class="navigation" href="{% url 'membership:profile' %}">Profile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a class="navigation" href="{% url 'nxt:about' %}">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a class="navigation" href="{% url 'nxt:django.contrib.sitemaps.views.sitemap' %}">Site Map</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -36,6 +36,6 @@
 <p class="copyright">&copy; Thomas Lockhart</p>
 </div>
 {% endblock footer %}
-{% block javascript %}{% endblock %}
+{% block javascript %}{% endblock javascript %}
 </body>
 </html>
