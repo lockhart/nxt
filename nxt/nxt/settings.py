@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.admindocs',
     'social_django',
+    'nxt',
     'membership',
 ]
 
